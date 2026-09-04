@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Ex1 } from './Lista/ex1/ex1';
+import { Ex1 } from './lista/ex1/ex1';
 
 @NgModule({
   declarations: [App, Ex1],
