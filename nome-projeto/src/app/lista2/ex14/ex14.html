@@ -1,0 +1,15 @@
+@if (mostrarMensagem) {
+  <p>Mensagem visível usando @if!</p>
+} @else {
+  <p>Mensagem oculta!</p>
+}
+
+<ul>
+  @for (item of itens; track item.id) {
+    <li>{{ item.nome }}</li>
+  } @empty {
+    <li>Nenhum item na lista.</li>
+  }
+</ul>
+
+<button (click)="limpar()">Esvaziar Lista</button>

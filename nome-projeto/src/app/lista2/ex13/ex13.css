@@ -1,0 +1,4 @@
+.p-alta { color: red; }
+.p-media { color: orange; }
+.p-baixa { color: green; }
+.concluida { text-decoration: line-through; opacity: 0.6; }

@@ -1,0 +1,20 @@
+<form (submit)="$event.preventDefault(); cadastrar()">
+  <div>
+    <label>Nome:</label>
+    <input type="text" [(ngModel)]="novoNome" name="nome">
+  </div>
+  <div>
+    <label>Quantidade:</label>
+    <input type="number" [(ngModel)]="novaQuantidade" name="quantidade">
+  </div>
+  <button type="button" (click)="cadastrar()">Cadastrar</button>
+</form>
+
+<p *ngIf="mensagemErro" style="color: red;">{{ mensagemErro }}</p>
+
+<ul>
+  <li *ngFor="let p of produtos">
+    {{ p.nome }} - Qtd: {{ p.quantidade }}
+    <button (click)="excluir(p.id)">Excluir</button>
+  </li>
+</ul>

@@ -1,0 +1,6 @@
+.status-planejamento { background-color: #e0e0e0; }
+.status-desenvolvimento { background-color: #d1ecf1; }
+.status-testes { background-color: #fff3cd; }
+.status-concluido { background-color: #d4edda; }
+.nota-alta { font-weight: bold; border: 2px solid green; }
+.nota-baixa { color: red; }
