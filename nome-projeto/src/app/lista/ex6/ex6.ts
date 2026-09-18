@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './ex6.html',
   styleUrl: './ex6.css',
 })
-export class Ex6 {
+export class Ex6Component {
   quantidade = 0;
 
   incrementar() {

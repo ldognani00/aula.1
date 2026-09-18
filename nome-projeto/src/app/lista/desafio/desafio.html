@@ -1,0 +1,21 @@
+<div>
+    <label>Nome do Aluno: </label>
+    <input type="text" [(ngModel)]="nomeAluno"><br><br>
+
+    <p>
+        Disciplinas: {{disciplinas}}
+        <button (click)="diminuirDisciplinas()" [disabled]="disciplinas <=1">-</button>
+        <button (click)="aumentarDisciplinas()">+</button>   
+    </p>
+
+    <button (click)="confirmarMatricula()" [disabled]="!nomeAluno.trim()">Realizar Matrícula</button>
+</div>
+
+<hr>
+<div>
+    <h4>Resumo em Tempo Real: </h4>
+    <p>Aluno: {{nomeAluno}}</p>
+    <p>Qtd. Disciplinas: {{disciplinas}}</p>
+</div>
+
+<p *ngIf="mensagemConfirmacao"><strong>{{mensagemConfirmacao}}</strong></p>

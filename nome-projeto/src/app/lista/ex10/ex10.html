@@ -1,0 +1,11 @@
+<div>
+    <label>Usuário: </label>
+    <input type="text" [(ngModel)]="usuario"><br>
+
+    <label>Senha: </label>
+    <input type="password" [(ngModel)]="senha"><br>
+
+    <button (click)="entrar()" [disabled]="!usuario || !senha">Entrar</button>
+</div>
+
+<p *ngIf="mensagem">{{mensagem}}</p>

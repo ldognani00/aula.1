@@ -1,1 +1,6 @@
-<p>ex9 works!</p>
+<label>Produto: </label>
+<input type="text" [(ngModel)]="produto">
+
+<p>Estoque de {{produto}}: {{estoque}}</p>
+<button (click)="diminuir()" [disabled]="estoque ===0">-</button>
+<button (click)="aumentar()">+</button>

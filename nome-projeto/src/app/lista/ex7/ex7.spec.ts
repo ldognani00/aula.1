@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Ex7 } from './ex7';
+import { Ex7Component } from './ex7';
 
 describe('Ex7', () => {
-  let component: Ex7;
-  let fixture: ComponentFixture<Ex7>;
+  let component: Ex7Component;
+  let fixture: ComponentFixture<Ex7Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Ex7],
+      declarations: [Ex7Component],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Ex7);
+    fixture = TestBed.createComponent(Ex7Component);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

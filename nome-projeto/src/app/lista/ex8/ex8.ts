@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './ex8.html',
   styleUrl: './ex8.css',
 })
-export class Ex8 {
+export class Ex8Component {
   produto = 'Mouse Gamer';
   preco = 150;
   quantidade = 2;
