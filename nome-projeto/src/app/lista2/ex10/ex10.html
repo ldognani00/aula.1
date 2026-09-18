@@ -1,0 +1,16 @@
+<ul>
+  <li *ngFor="let produto of produtos">
+    Nome: {{ produto.nome }} | 
+    
+    <span [ngStyle]="{'color': produto.promocao ? 'purple' : 'black'}"
+          [ngClass]="{'em-promocao': produto.promocao}">
+      Preço: {{ produto.preco | currency:'BRL' }}
+    </span>
+
+    <span *ngIf="produto.promocao"> - <strong>Produto em promoção</strong></span>
+
+    <button (click)="alternarPromocao(produto)">
+      {{ produto.promocao ? 'Desativar Promoção' : 'Ativar Promoção' }}
+    </button>
+  </li>
+</ul>

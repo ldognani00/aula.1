@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let produto of produtos; let i = index">
+    Posição: {{ i + 1 }} | 
+    Nome: {{ produto.nome }} | 
+    Preço: {{ produto.preco | currency:'BRL' }} | 
+    Quantidade: {{ produto.quantidade }} | 
+    Total em Estoque: {{ (produto.preco * produto.quantidade) | currency:'BRL' }}
+  </li>
+</ul>
