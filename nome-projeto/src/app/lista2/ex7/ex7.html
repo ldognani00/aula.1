@@ -1,11 +1,9 @@
 <ul>
-    <li *ngFor="let disciplina of disciplinas; let is Even = even; let isOdd = odd; letFirst = first; let isLast = last"
-    [ngClass]="{
-        'par': isEven,
-        'impar': isOdd,
-        'primeira': isFirst,
-        'ultima': isLast
-    }">
-    {{disciplina}}
-    </li>
+  <li *ngFor="let disciplina of disciplinas; let isEven = even; let isOdd = odd; let isFirst = first; let isLast = last; let i = index">
+    {{ i + 1 }} - {{ disciplina }}
+    <span *ngIf="isEven"> (Par)</span>
+    <span *ngIf="isOdd"> (Ímpar)</span>
+    <span *ngIf="isFirst"> - Primeira</span>
+    <span *ngIf="isLast"> - Última</span>
+  </li>
 </ul>

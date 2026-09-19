@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { Lista2RoutingModule } from './lista2-routing-module';
 import { Ex1 } from './ex1/ex1';
@@ -36,6 +37,6 @@ import { Desafio } from './desafio/desafio';
     Ex14,
     Desafio,
   ],
-  imports: [CommonModule, Lista2RoutingModule],
+  imports: [CommonModule, Lista2RoutingModule, FormsModule],
 })
 export class Lista2Module {}
