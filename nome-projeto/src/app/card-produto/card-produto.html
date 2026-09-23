@@ -1,0 +1,7 @@
+<div class="card" [class.indisponivel]="!disponivel">
+    <h3>{{nome}}</h3>
+    <p class="preco">Preço: R${{preco}},00</p>
+    <p class="status">
+        Disponível:{{ disponivel ? 'Sim' : 'Não'}}
+    </p>
+</div>

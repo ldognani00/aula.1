@@ -1,1 +1,12 @@
+<app-cabecalho [titulo]="cabecalhoLoja"></app-cabecalho>
+
 <router-outlet></router-outlet>
+
+<div class="container-produtos">
+    <app-card-produto
+    *ngFor="let item of produtos"
+    [nome]="item.nome"
+    [preco]="item.preco"
+    [disponivel]="item.disponivel">
+    </app-card-produto>
+</div>
